@@ -16,10 +16,8 @@ public class BOJ_2525 {
         /* ==========sol========== */
         int h = (B+C)/60;
         int m = (B+C)%60;
-        if(A+h>=24)
-            h=(A+h)%24;
-        else
-            h+=A;
+        if(A+h>=24) h=(A+h)%24;
+        else h+=A;
         /* ==========output========== */
         System.out.println(h + " " + m);
         br.close();
